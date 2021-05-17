@@ -7,7 +7,7 @@ $VeryDarkCyan: hsl(179, 100%, 13%);
 
 *, *::before, *::after {
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: normal;
 }
 
@@ -15,4 +15,46 @@ body{
     padding: 0;
     margin: 0;
     background-color: $mainBackground;
+    color: $mainBackground;
+}
+
+.calculator-grid{
+    min-height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5,100px);
+    button{
+        cursor: pointer;
+        outline: none;
+        font-size: 2rem;
+        border: 1px solid $mainBackground;
+        background-color: rgba(255, 255, 255, .75);
+        &:hover{
+            background-color: rgba(255, 255, 255, .90);
+        }
+    }
+    .output{
+        background-color: rgba(233, 47%, 7%, .75);
+        color: $VeryLightGray;
+        grid-column: 1 / -1;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        justify-content: space-around;
+        flex-direction: column;
+        padding: 10px;
+        word-wrap: break-word;
+        word-break: break-all; //Se o numero for muito grande, passa para a linha abaixo
+    }
+    .span-two{
+        grid-column: span 2;
+    }
+    .previous-operand{
+        font-size: 2rem;
+    }
+    .current-operand{
+        font-size: 3rem;
+    }
 }
