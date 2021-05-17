@@ -1,0 +1,18 @@
+$mainBackground : hsl(233, 47%, 7%);
+$cardBackground : hsl(244, 38%, 16%);
+$VeryLightGray: hsl(0, 0%, 95%);
+$BrightOrange: hsl(31, 77%, 52%);
+$DarkCyan: hsl(184, 100%, 22%);
+$VeryDarkCyan: hsl(179, 100%, 13%);
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: $mainBackground;
+}
