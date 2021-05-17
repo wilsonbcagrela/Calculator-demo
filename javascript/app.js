@@ -6,7 +6,7 @@ const operacoes = document.querySelectorAll("[data-operacao]")
 
 numeros.forEach(numero => {
     numero.addEventListener("click", () =>{
-
+        
         currentOperand.innerHTML = numero.innerHTML
     })
 })
