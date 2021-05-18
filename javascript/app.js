@@ -10,9 +10,6 @@ let currentOp
 function contas(){
     let current = parseFloat(currentOperand.innerHTML) //faz com que fique so o numero 
     let prev = parseFloat(previousOperand.innerHTML)
-    // console.log(currentOp)
-    // console.log(current)
-    // console.log(prev)
     switch(currentOp){
         case '+':
             currentOperand.innerHTML = prev + current
